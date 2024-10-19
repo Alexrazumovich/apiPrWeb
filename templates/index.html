@@ -24,6 +24,18 @@
                         <p class="card-text">Описание погоды: {{ weather['weather'][0]['description'] }}</p>
                     </div>
                 </div>
+                <br>
+            {% endif %}
+            {% if quote %}
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Цитата дня</h3>
+<!--                        <p class="card-text">{{ quote['content']}}</p>-->
+                        <p class="card-text">{{ quote['Quotes'][0]['quote']}}</p>
+                        <p class="card-text">Автор: {{ quote['Quotes'][0]['author']}}</p>
+                    </div>
+                </div>
+                <br>
             {% endif %}
             {% if news %}
                 <div class="card">
